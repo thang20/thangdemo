@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .errorText {
+            color: red;
+        }
+        .form-group {
+           
+        margin-left: auto;
+        margin-right: auto;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body background = "../anh/anhnen.jpg">
+<<<<<<< HEAD
+    <h1 align="center">Add product</h1>
+    <div class="form-group" style="width:100%;" align="center">
+            <form action="/doAddProduct" method="post">
+            <table>
+            <tr>
+                <td>id</td>
+                <td><input class="form-control" type="text" name="id" value="{{oldValues.id}}"></td>
+=======
+    <h1>Add product</h1>
+    <div class="form-group" style="width:100%;">
+            <form action="/doAddProduct" method="post">
+            <table>
+            <tr>
+                <td>Name</td>
+                <td><input class="form-control" type="text" name="name" pattern="[A-Za-z]" value="{{oldValues.name}}"></td>
+                {{!-- <td><input type="text" name="name" value="{{oldValues.name} pattern="[A-Za-z]" title="Name"></td> --}}
+>>>>>>> f6b16fdd080e9f145171ad0fe485dd3cbdb91c50
+                
+            </tr>
+            <tr>
+                <td>description</td>
+                <td> 
+                    <input class="form-control" name="description" value="{{oldValues.description}}">
+                    
+                   
+                </td>
+
+                  
+                <span class="errorText">{{error.nameError2}}</span>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td><input class="form-control" type="text" name="color" value="{{oldValues.color}}"></td>
+            </tr>
+            <tr>
+                <td>price</td>
+                <td><input class="form-control" type="text" name="price" value="{{oldValues.price}}"></td>
+            </tr>
+            
+            <tr align="right">
+                <td colspan="2"><input class="btn btn-primary" type="submit" value="Add Product"/></td>          
+            </tr>
+        </table>    
+        </form>
+    </div>
+    
+</body>
+</html>

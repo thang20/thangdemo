@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     
+        .errorText {
+            color: red;
+        }
+ 
+</style>
+<body>
+     <table width="50%" border="1" >
+        <tr>
+            <td>Id</td>
+            <td>Description</td>
+            <td>color</td>
+            <td>price</td>
+            <td>Delete</td>
+            <span class="errorText">{{error.nameError1}}</span>
+           
+        </tr>
+        {{# each sanPham}}
+        <tr>
+
+            <td>{{_id}}</td>
+            <td>{{description}}</td>
+            <td >{{color}}</td>
+             <td>{{price}}</td>
+            <td><a href="/delete?id={{_id}}&price={{price}}&name={{name}}">Detele</a></td>
+            
+           
+        </tr>  
+        {{/each}}
+    </table>
+    <br>
+    <a style="text-align: center" href="/add">New Product</a>
+    {{!-- <button name="button" type="button" ><a style="text-align: center" href="/add">New Product</a></button> --}}
+     
+</body>
+</html>
